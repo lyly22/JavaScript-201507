@@ -131,6 +131,7 @@ window.onscroll=function(){
 	//注意：元素的位置是固定的，但浏览器的可视窗口是不断变化的
 	
 	var windowBottom=(document.documentElement.scrollTop||document.body.scrollTop)+(document.documentElement.clientHeight||document.body.clientHeight);
+	var windowBottom2=document.documentElement.scrollHeight||document.body.scrollHeight;
 	if(contentBottom<windowBottom){
 		content.innerHTML="给我变！！！"
 	}
