@@ -131,13 +131,17 @@ window.onscroll=function(){
 	//注意：元素的位置是固定的，但浏览器的可视窗口是不断变化的
 	
 	var windowBottom=(document.documentElement.scrollTop||document.body.scrollTop)+(document.documentElement.clientHeight||document.body.clientHeight);
+<<<<<<< HEAD
 	var windowBottom2=document.documentElement.scrollHeight||document.body.scrollHeight;
 	if(contentBottom<windowBottom){
+=======
+	if((contentBottom+200)<windowBottom){
+>>>>>>> 87464dd923559968f861c2142397e9b46d34b3cb
 		content.innerHTML="给我变！！！"
 	}
 }
 
-
+var windowBottom=(document.documentElement.scrollTop||document.body.scrollTop)=(document.documentElement.clientHeight||document.body.clientHeight);
 
 
 function offset(ele){
